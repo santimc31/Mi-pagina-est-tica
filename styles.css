@@ -1,0 +1,145 @@
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cuerpo */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Contenedor Principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(45deg, #ff0066, #6a00f4);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    box-shadow: inset 0 0 50px rgba(0,0,0,0.4);
+}
+
+.hero h1 {
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-out;
+}
+
+.hero button {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border: none;
+    background: #ff0066;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    animation: fadeIn 2.5s ease-out;
+}
+
+.hero button:hover {
+    transform: scale(1.1);
+    background-color: #6a00f4;
+}
+
+/* Secciones */
+main {
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    animation: fadeIn 2s ease-out;
+}
+
+section p {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    animation: fadeIn 2.5s ease-out;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 20px;
+    text-align: left;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+}
+
+ul li::before {
+    content: '⚡';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ff0066;
+    font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 20px;
+    box-shadow: inset 0 0 50px rgba(0,0,0,0.4);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
